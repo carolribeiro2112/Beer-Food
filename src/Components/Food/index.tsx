@@ -55,17 +55,17 @@ const Foods = () => {
       <h2>Tipo selecionado: <strong>{foodName}</strong></h2>
       
       <div className="food-container">
-          <div className="food-item">
+          
             {
               food !== null &&
               food.map((item:Meal)=>(
-                <div key={item.idMeal}>
+                <div key={item.idMeal} className="food-item">
                   <img src={item.strMealThumb} />
                   <p>{item.strMeal}</p>
                 </div>
               ))
             }
-          </div>
+          
       </div>
     </div>
   );
