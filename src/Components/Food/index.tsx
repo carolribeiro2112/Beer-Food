@@ -60,7 +60,7 @@ const Foods = () => {
               food !== null &&
               food.map((item:Meal)=>(
                 <div key={item.idMeal} className="food-item">
-                  <img src={item.strMealThumb} />
+                  <img src={item.strMealThumb}  alt="meal"/>
                   <p>{item.strMeal}</p>
                 </div>
               ))
